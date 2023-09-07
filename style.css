@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: darkslategrey;
+  padding: 12rem 5rem;
+}
+button.netflixBtn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  cursor: pointer;
+  /* height: 60px; */
+  /* width: 170px; */
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 105%;
+  border: none;
+  background-color: rgb(183, 183, 183);
+}
+
+.bgDiv {
+  position: absolute;
+  background-color: rgb(235, 235, 235);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+  z-index: -1;
+}
+
+/* button:hover div {
+  transform: none;
+} */
+
+@keyframes slide {
+  to {
+    transform: translateX(0%);
+  }
+}
+.ani {
+  animation: slide 5s linear forwards;
+}
+
+.startBtn,
+h1 {
+  margin-bottom: 3rem;
+}
